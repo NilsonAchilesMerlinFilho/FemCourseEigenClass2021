@@ -10,6 +10,9 @@ endif()
 add_executable(TestEigen mainEigenTest.cpp)
 target_link_libraries (TestEigen course_library Eigen3::Eigen)
 
+add_executable(Example1 Example1.cpp)
+target_link_libraries (Example1 course_library Eigen3::Eigen)
+
 add_executable(Fem2021 main2021.cpp)
 target_link_libraries (Fem2021 Eigen3::Eigen course_library)
 
