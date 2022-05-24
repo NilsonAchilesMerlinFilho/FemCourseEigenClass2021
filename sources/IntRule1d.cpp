@@ -30,7 +30,7 @@ void IntRule1d::SetOrder(int order) {
         DebugStop();
     }
 
-    int nPoints = (order+1)/2;
+    int nPoints = 2*order-1;
     fPoints.resize(nPoints,1);
     fWeights.resize(nPoints);
 

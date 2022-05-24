@@ -25,7 +25,7 @@ void Geom1d::Shape(const VecDouble &xi, VecDouble &phi, MatrixDouble &dphi) {
     if (phi.size() != 2) DebugStop();
    
     phi[0] = (1 - xi[0]) / 2.;
-    phi[1] = (1 - xi[0]) / 2.;
+    phi[1] = (1 + xi[0]) / 2.;
 
     dphi(0,0) = -0.5;
     dphi(1,0) = 0.5;
@@ -39,7 +39,14 @@ void Geom1d::X(const VecDouble &xi, MatrixDouble &NodeCo, VecDouble &x) {
 
     Shape(xi,phi,dphi);
 
-    x[0] = NodeCo(0,0) * phi[0] + NodeCo(0,1)*phi[1];
+    int nrow = NodeCo.rows();
+    int ncol = NodeCo.cols();
+
+    for (int i = 0; i < nCorners; i++) {
+        for (int j = 0; j < nrow; j++) {
+            x[j] += NodeCo(j,i) * phi[i];
+        }
+    }
 
 }
 
@@ -50,10 +57,17 @@ void Geom1d::GradX(const VecDouble &xi, MatrixDouble &NodeCo, VecDouble &x, Matr
 
     Shape(xi,phi,dphi);
 
-    x[0] = NodeCo(0,0) * phi[0] + NodeCo(0,1)*phi[1];
-    gradx(0,0) = NodeCo(0,0) * dphi(0,0);
-    gradx(0,1) = NodeCo(0,1) * dphi(1,0);
+    int ndirections = NodeCo.rows();
+    int npoints = NodeCo.cols();
 
+    gradx.resize(ndirections,1);
+    gradx.fill(0);
+    for (int i = 0; i < ndirections; i++) {
+        for (int j = 0; j < npoints; j++) {
+            x[i] += NodeCo(i,j)*phi[j];
+            gradx(i,0) += NodeCo(i,j)*dphi(j,0);
+        }
+    }
 }
 
 void Geom1d::SetNodes(const VecInt &nodes) {

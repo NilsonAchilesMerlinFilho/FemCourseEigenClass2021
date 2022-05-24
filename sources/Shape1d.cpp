@@ -30,12 +30,12 @@ void Shape1d::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, MatrixD
     dphi.resize(1,nshape);
 
     phi[0] = (1 - xi[0]) / 2.;
-    phi[1] = (1 - xi[0]) / 2.;
+    phi[1] = (1 + xi[0]) / 2.;
 
     dphi(0,0) = -0.5;
     dphi(0,1) = 0.5;
 
-    if (nshape > 2){
+    if (nshape > 2){      
         DebugStop();
     }
 

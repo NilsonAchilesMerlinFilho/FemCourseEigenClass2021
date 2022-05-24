@@ -69,6 +69,9 @@ void Analysis::RunSimulation() {
     RightHandSide = F;
 
     std::cout << "Computing solution..." << std::endl;
+    std::cout << "Global Matrix = \n" << K << std::endl;
+    std::cout << "Global Vector = \n" << F << std::endl;
+
     Solution = K.fullPivLu().solve(F);
 //    K.Solve_LU(F);
     std::cout << "Solution computed!" << std::endl;
