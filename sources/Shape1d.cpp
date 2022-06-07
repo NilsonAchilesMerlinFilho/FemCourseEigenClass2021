@@ -35,8 +35,9 @@ void Shape1d::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, MatrixD
     dphi(0,0) = -0.5;
     dphi(0,1) = 0.5;
 
-    if (nshape > 2){      
-        DebugStop();
+    if (nshape == 3){      
+        phi[2]=4*phi[0]*phi[1];
+        dphi(0,2)=4*dphi(0,0)*phi[1]+4*phi[0]*dphi(0,1);
     }
 
 }

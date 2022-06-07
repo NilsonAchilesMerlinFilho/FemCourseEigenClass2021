@@ -31,6 +31,9 @@ void IntRule1d::SetOrder(int order) {
     }
 
     int nPoints = 2*order-1;
+    if(order==0) {
+        nPoints=1;
+    }
     fPoints.resize(nPoints,1);
     fWeights.resize(nPoints);
 
