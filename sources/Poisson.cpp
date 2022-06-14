@@ -146,7 +146,7 @@ void Poisson::Contribute(IntPointData &data, double weight, MatrixDouble &EK, Ma
 void Poisson::PostProcessSolution(const IntPointData &data, const int var, VecDouble &Solout) const {
     MatrixDouble gradudx, flux;
     gradudx = data.axes.transpose()*data.dsoldx;
-    flux = -gradudx*permeability;
+    flux = -permeability*gradudx;
     
     int nstate = this->NState();
     if(nstate != 1) DebugStop();

@@ -14,11 +14,45 @@ IntRuleQuad::IntRuleQuad(){
 }
 
 IntRuleQuad::IntRuleQuad(int order) {
-    DebugStop();
+    SetOrder(order);
 }
 
 void IntRuleQuad::SetOrder(int order) {
-    DebugStop();
+        fOrder = order;
+    if(order < 0 || order > MaxOrder()){
+        DebugStop();
+    }
+
+    switch (order)
+    {
+    case 1:
+        fPoints.resize(1,2);
+        fWeights.resize(1);
+        fPoints(0,0)=0.;
+        fPoints(0,1)=0.;
+        fWeights[0]=4.;
+        break;
+    
+    case 2:
+        fPoints.resize(4,2);
+        fWeights.resize(4);
+        fPoints(0,0)=-sqrt(1./7.*(3. + 2.*sqrt(6./5.)));
+        fPoints(0,1)=-sqrt(1./7.*(3. + 2.*sqrt(6./5.)));
+        fWeights[0]= (1./2. - sqrt(5./6.)/6.)*(1./2. - sqrt(5./6.)/6.);
+        fPoints(1,0)=-sqrt(1./7.*(3. - 2.*sqrt(6./5.)));
+        fPoints(1,1)=-sqrt(1./7.*(3. + 2.*sqrt(6./5.)));
+        fWeights[1]= 49./216.;
+        fPoints(2,0)= sqrt(1./7.*(3. - 2.*sqrt(6./5.)));
+        fPoints(2,1)=-sqrt(1./7.*(3. + 2.*sqrt(6./5.)));
+        fWeights[2]= 49./216.;
+        fPoints(3,0)= sqrt(1./7.*(3. + 2.*sqrt(6./5.)));
+        fPoints(3,1)= -sqrt(1./7.*(3. + 2*sqrt(6./5.)));
+        fWeights[3]= (1./2. - sqrt(5./6.)/6.)*(1./2. - sqrt(5./6.)/6.);
+        break;
+    default:
+        DebugStop();
+        break;
+    }
 }
 
 void IntRuleQuad::gaulegQuad(const double x1, const double x2, VecDouble &co, VecDouble &w) {
