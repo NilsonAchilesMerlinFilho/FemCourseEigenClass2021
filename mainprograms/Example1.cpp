@@ -102,7 +102,7 @@ int main(){
     auto exact = [](const VecDouble &x, VecDouble &val, MatrixDouble &deriv)
     {
         val[0] = x[0]-sinh(x[0])/sinh(1.);
-        deriv(0,0) = 1.-cosh(x[0])*cosh(1.);
+        deriv(0,0) = 1.-cosh(x[0])*sinh(1.);
     };
     postprocess.AppendVariable("Sol");
     postprocess.AppendVariable("DSol");

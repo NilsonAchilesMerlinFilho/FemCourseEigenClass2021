@@ -29,7 +29,10 @@ void ShapeTriangle::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, M
         std::cout << "ShapeTriangle::Shape, only implemented until order = 2" << std::endl;
         DebugStop();
     }
-    
+
+    auto nshape = NShapeFunctions(orders);
+    phi.resize(nshape);
+    dphi.resize(2,nshape);   
     // Linear order
     phi[0] =  1.-xi[0]-xi[1];
     phi[1] =  xi[0];
@@ -41,8 +44,18 @@ void ShapeTriangle::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, M
     dphi(0,2) =  0.;
     dphi(1,2) =  1.;
     
-    std::cout << "Please implement me\n";
-    DebugStop();
+    if (nshape == 6){      
+    phi[3] =  -4.*xi[0]*(-1. + xi[0] + xi[1]);
+    phi[4] =  4*xi[0]*xi[1];
+    phi[5] =  -4.*xi[1]*(-1.+ xi[0] + xi[1]);
+
+    dphi(0,3) = 4. - 8.*xi[0] - 4.*xi[1];
+    dphi(1,3) = -4.*xi[0];
+    dphi(0,4) = 4.*xi[1];
+    dphi(1,4) = 4.*xi[0];
+    dphi(0,5) = -4.*xi[1];
+    dphi(1,5) = 4. - 4.*xi[0] - 8.*xi[1];
+    }
     
     
 }
