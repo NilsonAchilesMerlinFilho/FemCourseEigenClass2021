@@ -9,25 +9,25 @@
 void ShapeTetrahedron::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, MatrixDouble &dphi) {
     int nshape = NShapeFunctions(orders);
 
-    phi[0] = 1 - xi[0] - xi[1] - xi[2];
+    phi[0] = 1.0 - xi[0] - xi[1] - xi[2];
     phi[1] = xi[0];
     phi[2] = xi[1];
     phi[3] = xi[2];
 
-    dphi(0, 0) = -1.0;
-    dphi(0, 1) = 1.0;
-    dphi(0, 2) = 0.0;
-    dphi(0, 3) = 0.0;
+    dphi(0, 0) = -1.;
+    dphi(0, 1) = 1.;
+    dphi(0, 2) = 0.;
+    dphi(0, 3) = 0.;
 
-    dphi(1, 0) = -1.0;
-    dphi(1, 1) = 0.0;
-    dphi(1, 2) = 1.0;
-    dphi(1, 3) = 0.0;
+    dphi(1, 0) = -1.;
+    dphi(1, 1) = 0.;
+    dphi(1, 2) = 1.;
+    dphi(1, 3) = 0.;
 
-    dphi(2, 0) = -1.0;
-    dphi(2, 1) = 0.0;
-    dphi(2, 2) = 0.0;
-    dphi(2, 3) = 1.0;
+    dphi(2, 0) = -1.;
+    dphi(2, 1) = 0.;
+    dphi(2, 2) = 0.;
+    dphi(2, 3) = 1.;
 
     int count = 4;
     int is;

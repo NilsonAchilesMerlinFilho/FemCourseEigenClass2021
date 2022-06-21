@@ -33,7 +33,6 @@ void ShapeQuad::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, Matri
     auto nshape = NShapeFunctions(orders);
     phi.resize(nshape);
     dphi.resize(2,nshape);
-
     double x = xi[0];
     double y = xi[1];
 
@@ -42,20 +41,35 @@ void ShapeQuad::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, Matri
     phi[2] = (1. + x)*(1. + y)/4.;
     phi[3] = (1. - x)*(1. + y)/4.;
 
-    dphi(0, 0) = 1./4.*(-1. + y);
-    dphi(1, 0) = 1./4.*(-1. + x);
-    
+    dphi(0, 0) = (1./4.)*(-1. + y);
+    dphi(1, 0) = (1./4.)*(-1. + x);
     dphi(0, 1) = (1. - y)/4.;
-    dphi(1, 1) = 1./4.*(-1. -x);
-   
+    dphi(1, 1) = (1./4.)*(-1. -x);
     dphi(0, 2) = (1. + y)/4.;
     dphi(1, 2) = (1. + x)/4.;
-    
-    dphi(0, 3) = 1./4.*(-1. - y);
+    dphi(0, 3) = (1./4.)*(-1. - y);
     dphi(1, 3) = (1. - x)/4.;
 
     if (nshape == 9){      
-        DebugStop();
+    double x = xi[0];
+    double y = xi[1];   
+    
+    phi[4] = (1./4.) *(1. - x)*(1. + x)*(1. - y)*(1. - y);
+    phi[5] = (1./4.) * (1. + x)*(1. + x)*(1. - y)*(1. + y);
+    phi[6] = (1./4.)*(1. - x)*(1. + x)*(1. + y)*(1. + y);
+    phi[7] = (1./4.)*(1. - x)*(1. - x)*(1. - y)*(1. + y);
+    phi[8] = (1. - x)*(1. + x)*(1. - y)*(1. + y);
+
+    dphi(0, 4) = (1./4.)*(1. - x)*(1. - y)*(1. - y) - (1./4.)*(1. + x)*(1. - y)*(1. - y);
+    dphi(1, 4) = -(1./2.)*(1. - x)*(1. + x)*(1. - y);
+    dphi(0, 5) = (1./2.)*(1. + x)*(1. - y)*(1. + y);
+    dphi(1, 5) = (1./4.)*(1. + x)*(1. + x)*(1. - y) - (1./4.)*(1. + x)*(1. + x)*(1. + y);
+    dphi(0, 6) = (1./4.)*(1. - x)*(1. + y)*(1. + y) - (1./4.)*(1 + x)*(1. + y)*(1. + y);
+    dphi(1, 6) = (1./2.)*(1. - x)*(1. + x)*(1. + y);
+    dphi(0, 7) = -(1./2)*(1. - x)*(.1 - y)*(1. + y);
+    dphi(1, 7) = (1./4.)*(1. - x)*(1. - x)*(1. - y) - (1./4.)*(1. - x)*(1. - x)*(1. + y);
+    dphi(0, 8) = (1. - x)*(1. - y)*(1. + y) - (1. + x)*(1. - y)*(1. + y);
+    dphi(1, 8) = (1. - x)*(1. + x)*(1. - y) - (1. - x)*(1. + x)*(1. + y);
     }
 }
 

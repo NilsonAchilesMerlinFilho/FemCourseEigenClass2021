@@ -31,7 +31,7 @@ int main ()
 {
     GeoMesh gmesh;
     ReadGmsh read;
-    std::string filename("cube3D.msh");
+    std::string filename("../cube3D.msh");
 #ifdef MACOSX
     filename = "../"+filename;
 #endif

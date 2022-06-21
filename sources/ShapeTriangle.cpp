@@ -45,9 +45,9 @@ void ShapeTriangle::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, M
     dphi(1,2) =  1.;
     
     if (nshape == 6){      
-    phi[3] =  -4.*xi[0]*(-1. + xi[0] + xi[1]);
-    phi[4] =  4*xi[0]*xi[1];
-    phi[5] =  -4.*xi[1]*(-1.+ xi[0] + xi[1]);
+    phi[3] =  4.*xi[0]*(1. - xi[0] - xi[1]);
+    phi[4] =  4.*xi[0]*xi[1];
+    phi[5] =  4.*xi[1]*(1.- xi[0] - xi[1]);
 
     dphi(0,3) = 4. - 8.*xi[0] - 4.*xi[1];
     dphi(1,3) = -4.*xi[0];
@@ -56,8 +56,6 @@ void ShapeTriangle::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, M
     dphi(0,5) = -4.*xi[1];
     dphi(1,5) = 4. - 4.*xi[0] - 8.*xi[1];
     }
-    
-    
 }
 
 /// returns the number of shape functions associated with a side

@@ -29,7 +29,7 @@ int main ()
 {
     GeoMesh gmesh;
     ReadGmsh read;
-    std::string filename("quads.msh");
+    std::string filename("../quads.msh");
 #ifdef MACOSX
     filename = "../"+filename;
 #endif
