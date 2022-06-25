@@ -14,7 +14,7 @@ using namespace std;
 int main(){
     
     // Creating a Geometric mesh
-    int nElements = 1;
+    int nElements = 64;
     int nNodes = nElements+1;
 
     GeoMesh *gmesh = new GeoMesh();   
@@ -88,7 +88,7 @@ int main(){
     L2Projection *bc_point = new L2Projection(bcType,matIdBC,proj,val1,val2);
     std::vector<MathStatement *> mathvec = {0,mat,bc_point};
     cmesh.SetMathVec(mathvec);
-    cmesh.SetDefaultOrder(1);
+    cmesh.SetDefaultOrder(2);
     
     //Insere o material na malha computacional e cria o espaço de aproximação
     cmesh.AutoBuild();
@@ -102,7 +102,7 @@ int main(){
     auto exact = [](const VecDouble &x, VecDouble &val, MatrixDouble &deriv)
     {
         val[0] = x[0]-sinh(x[0])/sinh(1.);
-        deriv(0,0) = 1.-cosh(x[0])*sinh(1.);
+        deriv(0,0) = 1.-cosh(x[0])/sinh(1.);
     };
     postprocess.AppendVariable("Sol");
     postprocess.AppendVariable("DSol");

@@ -134,7 +134,8 @@ void Poisson::Contribute(IntPointData &data, double weight, MatrixDouble &EK, Ma
         res = resloc[0];
     }
 
-    EK += (dphi.transpose() * dphi + phi * phi.transpose()) * weight;
+    // EK += (dphi.transpose() * dphi + phi * phi.transpose()) * weight; (Caso 1D)
+    EK += dphi.transpose() * dphi * weight; // (Caso 2D)
     EF += res * phi * weight;
 
     std::cout << "Phi=" << phi << std::endl;
