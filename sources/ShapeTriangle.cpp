@@ -34,7 +34,7 @@ void ShapeTriangle::Shape(const VecDouble &xi, VecInt &orders, VecDouble &phi, M
     phi.resize(nshape);
     dphi.resize(2,nshape);   
     // Linear order
-    phi[0] =  1./2.-xi[0]-xi[1];
+    phi[0] =  1.-xi[0]-xi[1];
     phi[1] =  xi[0];
     phi[2] =  xi[1];
     dphi(0,0) = -1.;

@@ -138,10 +138,10 @@ void Poisson::Contribute(IntPointData &data, double weight, MatrixDouble &EK, Ma
     EK += dphi.transpose() * dphi * weight; // (Caso 2D)
     EF += res * phi * weight;
 
-    std::cout << "Phi=" << phi << std::endl;
-    std::cout << "DPhi=" << dphi << std::endl;
-    std::cout << "Weight=" << weight << std::endl;
-    std::cout << "EF=" << EF << std::endl;
+    // std::cout << "Phi=" << phi << std::endl;
+    // std::cout << "DPhi=" << dphi << std::endl;
+    // std::cout << "Weight=" << weight << std::endl;
+    // std::cout << "EF=" << EF << std::endl;
 }
 
 void Poisson::PostProcessSolution(const IntPointData &data, const int var, VecDouble &Solout) const {

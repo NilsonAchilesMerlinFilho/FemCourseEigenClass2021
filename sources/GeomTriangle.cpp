@@ -33,7 +33,7 @@ void GeomTriangle::Shape(const VecDouble& xi, VecDouble& phi, MatrixDouble& dphi
     phi[2] = y;
 
     dphi(0,0) = -1.;
-    dphi(0,1) = -1.;
+    dphi(1,0) = -1.;
 
     dphi(0,1) = 1.;
     dphi(1,1) = 0.;
@@ -70,10 +70,12 @@ void GeomTriangle::GradX(const VecDouble &xi, MatrixDouble &NodeCo, VecDouble &x
     x.setZero();
     int nrow = NodeCo.rows();
     int ncol = NodeCo.cols();
-
+    // std::cout << "NodeCo=" << NodeCo << std::endl;
+    // std::cout << "Gradx=" << gradx << std::endl;
     VecDouble phi(nCorners);
     MatrixDouble dphi(Dimension, nCorners);
     Shape(xi, phi, dphi);
+    // std::cout << "dphi=" << dphi << std::endl;
     for (int i = 0; i < nCorners; i++) {
         for (int j = 0; j < Dimension; j++) {
             x[j] += NodeCo(j,i) * phi[i];
@@ -81,6 +83,7 @@ void GeomTriangle::GradX(const VecDouble &xi, MatrixDouble &NodeCo, VecDouble &x
             gradx(j, 1) += NodeCo(j, i) * dphi(1, i);
         }
     }
+        // std::cout << "Gradx=" << gradx << std::endl;
 }
 
 void GeomTriangle::SetNodes(const VecInt &nodes) {
