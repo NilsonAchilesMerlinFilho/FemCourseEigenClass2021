@@ -1,0 +1,1120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						15
+					]
+				},
+				{
+					"build" : "_deps/catch2-build",
+					"jsonFile" : "directory-_deps.catch2-build-Debug-4591b301172a309ea9cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/catch2-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "headers",
+					"jsonFile" : "directory-headers-Debug-5c0c023ead40bf8aeecc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "headers"
+				},
+				{
+					"build" : "sources",
+					"jsonFile" : "directory-sources-Debug-b6fecc0fc9023ba523a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sources"
+				},
+				{
+					"build" : "tinyxml",
+					"jsonFile" : "directory-tinyxml-Debug-51c8faf649e431ec4e2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tinyxml"
+				},
+				{
+					"build" : "mainprograms",
+					"jsonFile" : "directory-mainprograms-Debug-618ec73c0bf6dc6fe605.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mainprograms",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "FemCourseClassVersion",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Catch2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-a2f4652873b31a3b4443.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3e93893dc0618e684ae7",
+					"jsonFile" : "target-ALL_BUILD-Debug-bbf52a54c775ffe63425.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Assemble::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Assemble-Debug-cb66022a13b9151e7900.json",
+					"name" : "Assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Calcstiff::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Calcstiff-Debug-2a64d208c893d346e284.json",
+					"name" : "Calcstiff",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Contribute::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Contribute-Debug-72ccfca7fad15d34fbee.json",
+					"name" : "Contribute",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Example1::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Example1-Debug-abf4dd911e625da5b745.json",
+					"name" : "Example1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Fem2021::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Fem2021-Debug-b004b97febf30738484d.json",
+					"name" : "Fem2021",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PostProcess::@bcf048ec11e67256b722",
+					"jsonFile" : "target-PostProcess-Debug-3a70c2d3c2cfa666aad2.json",
+					"name" : "PostProcess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestEigen::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestEigen-Debug-7a2a9985f7e42fcafd6c.json",
+					"name" : "TestEigen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestGeom::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestGeom-Debug-4751ed3f5d930d211872.json",
+					"name" : "TestGeom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestIntegrate::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestIntegrate-Debug-347eac2532328e2a9345.json",
+					"name" : "TestIntegrate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestOneDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestOneDProblem-Debug-d07cd9dd6f271c3faa4c.json",
+					"name" : "TestOneDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestShape::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestShape-Debug-135b8fed72bffe9f1aa6.json",
+					"name" : "TestShape",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestThreeDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestThreeDProblem-Debug-3ab13a1c0e507756b41b.json",
+					"name" : "TestThreeDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestTwoDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestTwoDProblem-Debug-6a55cb275c4238839343.json",
+					"name" : "TestTwoDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-159d46702d18b241674a.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "course_library::@bcf048ec11e67256b722",
+					"jsonFile" : "target-course_library-Debug-1eb948767838192971c4.json",
+					"name" : "course_library",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						15
+					]
+				},
+				{
+					"build" : "_deps/catch2-build",
+					"jsonFile" : "directory-_deps.catch2-build-Release-4591b301172a309ea9cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/catch2-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "headers",
+					"jsonFile" : "directory-headers-Release-5c0c023ead40bf8aeecc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "headers"
+				},
+				{
+					"build" : "sources",
+					"jsonFile" : "directory-sources-Release-b6fecc0fc9023ba523a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sources"
+				},
+				{
+					"build" : "tinyxml",
+					"jsonFile" : "directory-tinyxml-Release-51c8faf649e431ec4e2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tinyxml"
+				},
+				{
+					"build" : "mainprograms",
+					"jsonFile" : "directory-mainprograms-Release-618ec73c0bf6dc6fe605.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mainprograms",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "FemCourseClassVersion",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Catch2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-a2f4652873b31a3b4443.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3e93893dc0618e684ae7",
+					"jsonFile" : "target-ALL_BUILD-Release-bbf52a54c775ffe63425.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Assemble::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Assemble-Release-fbb60af7a8649622706e.json",
+					"name" : "Assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Calcstiff::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Calcstiff-Release-cb75af925de35ae4048a.json",
+					"name" : "Calcstiff",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Contribute::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Contribute-Release-2e1c69b30f3b13e43846.json",
+					"name" : "Contribute",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Example1::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Example1-Release-0d74473a2fe08b76eab6.json",
+					"name" : "Example1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Fem2021::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Fem2021-Release-2851a1497f813f0cb795.json",
+					"name" : "Fem2021",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PostProcess::@bcf048ec11e67256b722",
+					"jsonFile" : "target-PostProcess-Release-bf03fad9e7e8445b94a4.json",
+					"name" : "PostProcess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestEigen::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestEigen-Release-f373d172906f5eeb5048.json",
+					"name" : "TestEigen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestGeom::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestGeom-Release-282cd661eb5188b3ca10.json",
+					"name" : "TestGeom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestIntegrate::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestIntegrate-Release-f908303a36274f0d2217.json",
+					"name" : "TestIntegrate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestOneDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestOneDProblem-Release-3698dd80ba551bf931ce.json",
+					"name" : "TestOneDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestShape::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestShape-Release-86109a2a9abec02556a6.json",
+					"name" : "TestShape",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestThreeDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestThreeDProblem-Release-a1b0062a3800e4f9e226.json",
+					"name" : "TestThreeDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestTwoDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestTwoDProblem-Release-b904a09b2fcde8dc5eee.json",
+					"name" : "TestTwoDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-159d46702d18b241674a.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "course_library::@bcf048ec11e67256b722",
+					"jsonFile" : "target-course_library-Release-9d7dc0edd49724947564.json",
+					"name" : "course_library",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						15
+					]
+				},
+				{
+					"build" : "_deps/catch2-build",
+					"jsonFile" : "directory-_deps.catch2-build-MinSizeRel-4591b301172a309ea9cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/catch2-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "headers",
+					"jsonFile" : "directory-headers-MinSizeRel-5c0c023ead40bf8aeecc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "headers"
+				},
+				{
+					"build" : "sources",
+					"jsonFile" : "directory-sources-MinSizeRel-b6fecc0fc9023ba523a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sources"
+				},
+				{
+					"build" : "tinyxml",
+					"jsonFile" : "directory-tinyxml-MinSizeRel-51c8faf649e431ec4e2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tinyxml"
+				},
+				{
+					"build" : "mainprograms",
+					"jsonFile" : "directory-mainprograms-MinSizeRel-618ec73c0bf6dc6fe605.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mainprograms",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "FemCourseClassVersion",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Catch2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a2f4652873b31a3b4443.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3e93893dc0618e684ae7",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-bbf52a54c775ffe63425.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Assemble::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Assemble-MinSizeRel-72ecf7885340875d9dbe.json",
+					"name" : "Assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Calcstiff::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Calcstiff-MinSizeRel-aae49f3d6d0677f01d68.json",
+					"name" : "Calcstiff",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Contribute::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Contribute-MinSizeRel-a56a2897dae1b84afffe.json",
+					"name" : "Contribute",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Example1::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Example1-MinSizeRel-d8c1bcf1984e0d02e003.json",
+					"name" : "Example1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Fem2021::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Fem2021-MinSizeRel-3108dad55a54ff8f2d30.json",
+					"name" : "Fem2021",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PostProcess::@bcf048ec11e67256b722",
+					"jsonFile" : "target-PostProcess-MinSizeRel-b5e71daf28ded2cc32d4.json",
+					"name" : "PostProcess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestEigen::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestEigen-MinSizeRel-ae8319bf950c2cb22598.json",
+					"name" : "TestEigen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestGeom::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestGeom-MinSizeRel-d1168a7a1481ff3ba742.json",
+					"name" : "TestGeom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestIntegrate::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestIntegrate-MinSizeRel-fdc1d074ab78e90f2ad2.json",
+					"name" : "TestIntegrate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestOneDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestOneDProblem-MinSizeRel-80de385088ad05bc08c1.json",
+					"name" : "TestOneDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestShape::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestShape-MinSizeRel-8377c548246aad7b0750.json",
+					"name" : "TestShape",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestThreeDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestThreeDProblem-MinSizeRel-5c67ff3b17ac37e81905.json",
+					"name" : "TestThreeDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestTwoDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestTwoDProblem-MinSizeRel-50b4e3ba48b44c7d95e6.json",
+					"name" : "TestTwoDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-159d46702d18b241674a.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "course_library::@bcf048ec11e67256b722",
+					"jsonFile" : "target-course_library-MinSizeRel-f336221925d7dcb6acde.json",
+					"name" : "course_library",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						15
+					]
+				},
+				{
+					"build" : "_deps/catch2-build",
+					"jsonFile" : "directory-_deps.catch2-build-RelWithDebInfo-4591b301172a309ea9cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/catch2-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "headers",
+					"jsonFile" : "directory-headers-RelWithDebInfo-5c0c023ead40bf8aeecc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "headers"
+				},
+				{
+					"build" : "sources",
+					"jsonFile" : "directory-sources-RelWithDebInfo-b6fecc0fc9023ba523a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sources"
+				},
+				{
+					"build" : "tinyxml",
+					"jsonFile" : "directory-tinyxml-RelWithDebInfo-51c8faf649e431ec4e2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tinyxml"
+				},
+				{
+					"build" : "mainprograms",
+					"jsonFile" : "directory-mainprograms-RelWithDebInfo-618ec73c0bf6dc6fe605.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mainprograms",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "FemCourseClassVersion",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Catch2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a2f4652873b31a3b4443.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3e93893dc0618e684ae7",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-bbf52a54c775ffe63425.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Assemble::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Assemble-RelWithDebInfo-37067f8302d4f9301aff.json",
+					"name" : "Assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Calcstiff::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Calcstiff-RelWithDebInfo-071b525ed53d5d2c6f93.json",
+					"name" : "Calcstiff",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Contribute::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Contribute-RelWithDebInfo-c4234e6f80657a967425.json",
+					"name" : "Contribute",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Example1::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Example1-RelWithDebInfo-005b69f72674e69d4a77.json",
+					"name" : "Example1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Fem2021::@bcf048ec11e67256b722",
+					"jsonFile" : "target-Fem2021-RelWithDebInfo-12de04d1c60babe2709d.json",
+					"name" : "Fem2021",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PostProcess::@bcf048ec11e67256b722",
+					"jsonFile" : "target-PostProcess-RelWithDebInfo-9fabcda86571fd28cfb5.json",
+					"name" : "PostProcess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestEigen::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestEigen-RelWithDebInfo-4c6a791939ee1d9fb6ba.json",
+					"name" : "TestEigen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestGeom::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestGeom-RelWithDebInfo-ee484505db6aebd1c3de.json",
+					"name" : "TestGeom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestIntegrate::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestIntegrate-RelWithDebInfo-a41e7efc4d718386fed0.json",
+					"name" : "TestIntegrate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestOneDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestOneDProblem-RelWithDebInfo-f5418803b427cf6ae2e3.json",
+					"name" : "TestOneDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestShape::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestShape-RelWithDebInfo-634344375bfbb9933224.json",
+					"name" : "TestShape",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestThreeDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestThreeDProblem-RelWithDebInfo-ae75b242054796fd121c.json",
+					"name" : "TestThreeDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "TestTwoDProblem::@bcf048ec11e67256b722",
+					"jsonFile" : "target-TestTwoDProblem-RelWithDebInfo-27b05b9c23878dba798e.json",
+					"name" : "TestTwoDProblem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-159d46702d18b241674a.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "course_library::@bcf048ec11e67256b722",
+					"jsonFile" : "target-course_library-RelWithDebInfo-5d852ea41a6319776436.json",
+					"name" : "course_library",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Nilson/Documents/GitHub/FemCourseEigenClass2021/build",
+		"source" : "C:/Users/Nilson/Documents/GitHub/FemCourseEigenClass2021"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

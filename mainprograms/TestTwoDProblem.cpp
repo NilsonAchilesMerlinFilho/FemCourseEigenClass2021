@@ -29,7 +29,7 @@ int main ()
 {
     GeoMesh gmesh;
     ReadGmsh read;
-    std::string filename("../quads16.msh");
+    std::string filename("../malha_h_1_64.msh");
 #ifdef MACOSX
     filename = "../"+filename;
 #endif
@@ -85,7 +85,7 @@ int main ()
     postprocess.AppendVariable("DSolExact");
     postprocess.SetExact(exact);
     mat1->SetExactSolution(exact);
-    locAnalysis.PostProcessSolution("Malha_Retangular.vtk", postprocess);
+    locAnalysis.PostProcessSolution("malha_h_1_64.vtk", postprocess);
 
     VecDouble errvec;
     errvec = locAnalysis.PostProcessError(std::cout, postprocess);
